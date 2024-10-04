@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\Backend\\SepetManager\\Methods\\Methods.csproj": {}
+    "C:\\Users\\ASUS\\RiderProjects\\BackendProject\\SepetManager\\Methods\\Methods.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\Backend\\SepetManager\\Methods\\Methods.csproj": {
+    "C:\\Users\\ASUS\\RiderProjects\\BackendProject\\SepetManager\\Methods\\Methods.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\SepetManager\\Methods\\Methods.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\BackendProject\\SepetManager\\Methods\\Methods.csproj",
         "projectName": "Methods",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\SepetManager\\Methods\\Methods.csproj",
+        "projectPath": "C:\\Users\\ASUS\\RiderProjects\\BackendProject\\SepetManager\\Methods\\Methods.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\SepetManager\\Methods\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\RiderProjects\\BackendProject\\SepetManager\\Methods\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
