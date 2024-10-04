@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\FirstProject\\FirstProject\\FirstProject.csproj",
-      "projectName": "FirstProject",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FirstProject\\FirstProject\\FirstProject.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\SepetManager\\Methods\\Methods.csproj",
+      "projectName": "Methods",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\SepetManager\\Methods\\Methods.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FirstProject\\FirstProject\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\SepetManager\\Methods\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
