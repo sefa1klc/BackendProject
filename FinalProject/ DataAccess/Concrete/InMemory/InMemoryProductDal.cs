@@ -1,6 +1,7 @@
 using System.Linq.Expressions;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace DataAccess.Concrete.InMemory;
 
@@ -63,6 +64,11 @@ public class InMemoryProductDal : IProductDal
             productToUpdate.UnitsInStock = product.UnitsInStock;
             productToUpdate.CategoryID = product.CategoryID;
         }
+    }
+
+    public List<ProductDetailDto> GetProductDetails()
+    {
+        throw new NotImplementedException();
     }
 
     public List<Product> GetAllByCategory(int categoryId)
