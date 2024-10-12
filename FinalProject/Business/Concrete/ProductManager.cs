@@ -19,7 +19,7 @@ public class ProductManager : IProductService
 
     public IDataResult<List<Product>> GetAll()
     {
-        if (DateTime.Now.Hour == 22)
+        if (DateTime.Now.Hour == 12)
         {
             return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
         }
@@ -53,7 +53,6 @@ public class ProductManager : IProductService
             return new ErrorResult(Messages.ProductNameTooShort);
         }
         _productDal.Add(product);
-        
         return new SuccessResult(Messages.ProductAdded);
     }
 }

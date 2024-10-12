@@ -4,7 +4,7 @@ public class Result : IResult
 {
     public Result(bool success, string massage) : this(success)
     {
-        Massage = massage;
+        Message = massage;
     }
     
     public Result(bool success)
@@ -13,5 +13,5 @@ public class Result : IResult
     }
 
     public bool Success { get; }
-    public string Massage { get; }
+    public string Message { get; }
 }

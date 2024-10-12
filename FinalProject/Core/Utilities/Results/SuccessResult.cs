@@ -6,7 +6,7 @@ public class SuccessResult : Result
     {
     }
 
-    public SuccessResult(string massage) : base(true)
+    public SuccessResult(string message) : base(true, message)
     {
     }
 }

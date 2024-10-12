@@ -6,7 +6,7 @@ public class ErrorResult : Result
     {
     }
 
-    public ErrorResult(string massage) : base(false)
+    public ErrorResult(string massage) : base(false, massage)
     {
     }
 }
