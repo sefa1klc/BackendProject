@@ -22,10 +22,10 @@ namespace WebAPI
             services.AddControllers();
 
             // Dependency Injection ayarları
-            services.AddSingleton<IProductService, ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
+            // services.AddSingleton<IProductService, ProductManager>();
+            // services.AddSingleton<IProductDal, EfProductDal>();
 
-            // Swagger/OpenAPI Desteği
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
@@ -36,7 +36,7 @@ namespace WebAPI
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage(); // Geliştirme ortamında hata sayfası
+                app.UseDeveloperExceptionPage(); 
                 app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
@@ -46,7 +46,7 @@ namespace WebAPI
 
             app.UseHttpsRedirection();
 
-            app.UseRouting(); // Rotalama yapılandırması
+            app.UseRouting(); 
 
             app.UseAuthorization();
 
