@@ -14,7 +14,7 @@ public class ProductValidator : AbstractValidator<Product>
         RuleFor(p => p.UnitPrice).GreaterThan(0).WithMessage("Unit price must be greater than 0");
         RuleFor(p => p.UnitPrice).GreaterThanOrEqualTo(10).When(p => p.CategoryID == 1)
             .WithMessage("Unit price must be greater than 10");
-        RuleFor(p => p.ProductName).Must(StartWithA);//normally this rule is not exist
+        //RuleFor(p => p.ProductName).Must(StartWithA);//normally this rule is not exist
     }
 
     private bool StartWithA(string arg)

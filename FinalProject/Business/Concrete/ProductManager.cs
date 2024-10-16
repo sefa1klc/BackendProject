@@ -1,9 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 using Business.Abstract;
 using Business.Constans;
+using Business.RulesMethods;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
@@ -17,10 +19,12 @@ namespace Business.Concrete;
 public class ProductManager : IProductService
 {
     IProductDal _productDal;
+    ProductManagerRulesMethods _productManagerRulesMethods;
 
-    public ProductManager(IProductDal productDal)
+    public ProductManager(IProductDal productDal, ProductManagerRulesMethods productManagerRulesMethods)
     {
         _productDal = productDal;
+        _productManagerRulesMethods = productManagerRulesMethods;
     }
 
     public IDataResult<List<Product>> GetAll()
@@ -55,7 +59,26 @@ public class ProductManager : IProductService
     [ValidationAspect(typeof(ProductValidator))]
     public IResult Add(Product product)
     {
+        IResult result = BusinessRules.Run(
+            _productManagerRulesMethods.CheckIfProductCountOfCategoryCorrect(product.CategoryID),
+            _productManagerRulesMethods.CheckIfProductNameExist(product.ProductName),
+            _productManagerRulesMethods.CheckIfCategoryLimitExceeded());
+        
+        // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
+        if (result != null) return result;
+        
         _productDal.Add(product);
         return new SuccessResult(Messages.ProductAdded);
     }
+
+    [ValidationAspect(typeof(ProductValidator))]
+    public IResult Update(Product product)
+    {
+        // CheckIfProductCountOfCategoryCorrect(product.CategoryID);
+        // CheckIfProductNameExist(product.ProductName);
+        
+        return new SuccessResult(Messages.ProductUpdated);
+    }
+
+    
 }
