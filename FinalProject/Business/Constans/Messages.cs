@@ -1,4 +1,5 @@
 using System.Reflection.Metadata.Ecma335;
+using Core.Entities.Concrete;
 
 namespace Business.Constans;
 
@@ -14,4 +15,12 @@ public static class Messages
     public static string ProductListed = "Product was listed";
     public static string MaintenanceTime = "The system is in maintenance";
     public static string ProductCountOfCategory = "There can be at most 10 products in a category";
+    public static string AuthorizationDenied = $"Authorization denied";
+    public static string UserAdded = "User successfully added";
+    public static string UserRegistered  = "User successfully registered";
+    public static string UserNotFound = "User not found";
+    public static string PasswordError = "Password invalid";
+    public static string SuccessfulLogin = "Successful login";
+    public static string UserAlreadyExists = "User already exists";
+    public static string AccessTokenCreated = "Access token created";
 }
