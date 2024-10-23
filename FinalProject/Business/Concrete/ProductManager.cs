@@ -4,7 +4,13 @@ using Business.BusinessAspects.Autofac;
 using Business.Constans;
 using Business.RulesMethods;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Exception;
+using Core.Aspects.Autofac.Logging;
+using Core.Aspects.Autofac.Performance;
+using Core.Aspects.Autofac.Transaction;
 using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Business;
 using Core.Utilities.Results;
@@ -28,6 +34,8 @@ public class ProductManager : IProductService
         _productManagerRulesMethods = productManagerRulesMethods;
     }
 
+    [PerformanceAspect(5)]
+    [CacheAspect]
     public IDataResult<List<Product>> GetAll()
     {
         if (DateTime.Now.Hour == 12)
@@ -37,7 +45,8 @@ public class ProductManager : IProductService
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(),Messages.ProductListed);
     }
 
-    public IDataResult<List<Product>> getAllByCategory(int categoryId)
+    
+    public IDataResult<List<Product>> getAllByCategory(int categoryId) 
     {
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(p=>p.CategoryID == categoryId));
     }
@@ -52,12 +61,15 @@ public class ProductManager : IProductService
         return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails());
     }
 
+    [CacheAspect]
     public IDataResult<Product> GetById(int productId)
     {
         return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductID == productId));
     }
 
+    [CacheRemoveAspect("IProductService.Get")]
     [SecuredOperation("product.add")]
+    [LogAspect(typeof(FileLogger))]
     [ValidationAspect(typeof(ProductValidator))]
     public IResult Add(Product product)
     {
@@ -73,6 +85,7 @@ public class ProductManager : IProductService
         return new SuccessResult(Messages.ProductAdded);
     }
     
+    [CacheRemoveAspect("IProductService.Get")]
     [ValidationAspect(typeof(ProductValidator))]
     public IResult Update(Product product)
     {
@@ -82,5 +95,11 @@ public class ProductManager : IProductService
         return new SuccessResult(Messages.ProductUpdated);
     }
 
-    
+    [TransactionScopeAspect]
+    public IResult AddTransactionalTest(Product product)
+    {
+        _productDal.Update(product);
+        _productDal.Add(product);
+        return new SuccessResult(Messages.ProductUpdated);
+    }
 }

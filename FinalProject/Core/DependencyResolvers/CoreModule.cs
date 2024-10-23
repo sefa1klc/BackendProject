@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Core.CrossCuttingConcerns.Caching;
 using Core.CrossCuttingConcerns.Caching.Microsoft;
 using Core.Utilities.IoC;
@@ -13,6 +14,7 @@ public class CoreModule : ICoreModule
         collection.AddMemoryCache();
         collection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         collection.AddSingleton<ICacheManager, MemoryCacheManager>();
+        collection.AddSingleton<Stopwatch>();
     }
     
 }
