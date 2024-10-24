@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Business
-build_property.ProjectDir = C:\Users\ASUS\Desktop\Backend\FinalProject\Business\
+build_property.ProjectDir = C:\Users\ASUS\Desktop\Backend\NorthwindWeb Project Backend\Business\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

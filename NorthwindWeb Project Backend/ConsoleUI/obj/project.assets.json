@@ -2943,11 +2943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\ConsoleUI\\ConsoleUI.csproj",
       "projectName": "ConsoleUI",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\ConsoleUI\\ConsoleUI.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\ConsoleUI\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\ConsoleUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2962,8 +2962,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Business\\Business.csproj"
+            "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Business\\Business.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Business\\Business.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\ DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\ DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\ DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\ DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\ DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\ DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\ DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\ DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Core\\Core.csproj"
+              "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Core\\Core.csproj"
               },
-              "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\Entities.csproj"
+              "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\Entities.csproj"
               }
             }
           }
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Business\\Business.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Business\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -97,11 +97,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\ DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\ DataAccess\\DataAccess.csproj"
+              "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\ DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\ DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\Entities.csproj"
+              "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\Entities.csproj"
               }
             }
           }
@@ -166,14 +166,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Core\\Core.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Core\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -262,14 +262,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\Entities.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -284,8 +284,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Core\\Core.csproj"
+              "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Core\\Core.csproj"
               }
             }
           }

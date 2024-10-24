@@ -3056,11 +3056,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3075,11 +3075,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Business\\Business.csproj"
+            "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Business\\Business.csproj"
             },
-            "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\FinalProject\\Entities\\Entities.csproj"
+            "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Desktop\\Backend\\NorthwindWeb Project Backend\\Entities\\Entities.csproj"
             }
           }
         }
