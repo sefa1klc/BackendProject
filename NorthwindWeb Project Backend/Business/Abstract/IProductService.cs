@@ -12,6 +12,8 @@ public interface IProductService
     IDataResult<List<ProductDetailDto>> GetProductDetails();
     
     IDataResult<Product> GetById(int productId);
+    
+    IDataResult<List<Product>> GetProductsById(int categoryId);
     IResult Add(Product product);
     IResult Update(Product product);
     

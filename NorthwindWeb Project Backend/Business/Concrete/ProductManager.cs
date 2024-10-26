@@ -38,10 +38,10 @@ public class ProductManager : IProductService
     [CacheAspect]
     public IDataResult<List<Product>> GetAll()
     {
-        if (DateTime.Now.Hour == 12)
-        {
-            return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
-        }
+        // if (DateTime.Now.Hour == 12)
+        // {
+        //     return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
+        // }
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(),Messages.ProductListed);
     }
 
@@ -65,6 +65,11 @@ public class ProductManager : IProductService
     public IDataResult<Product> GetById(int productId)
     {
         return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductID == productId));
+    }
+
+    public IDataResult<List<Product>> GetProductsById(int categoryId)
+    {
+        return new SuccessDataResult<List<Product>>(_productDal.GetAll(p=>p.CategoryID == categoryId));
     }
 
     [CacheRemoveAspect("IProductService.Get")]

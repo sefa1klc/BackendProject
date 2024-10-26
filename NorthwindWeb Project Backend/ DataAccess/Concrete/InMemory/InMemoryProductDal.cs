@@ -33,6 +33,11 @@ public class InMemoryProductDal : IProductDal
         throw new NotImplementedException();
     }
 
+    public List<Product> GetProductsById(Expression<Func<Product, bool>> filter = null)
+    {
+        throw new NotImplementedException();
+    }
+
     public Product Get(Expression<Func<Product, bool>> filter)
     {
         throw new NotImplementedException();
