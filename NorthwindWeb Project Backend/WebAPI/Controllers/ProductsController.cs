@@ -63,11 +63,18 @@ public class ProductsController : ControllerBase
     [HttpPost("update")]
     public IActionResult Update(Product product)
     {
+        if (product == null)
+        {
+            return BadRequest("Product cannot be null");
+        }
+        
         var result = _productService.Update(product);
         if (result.Success)
         {
             return Ok(result);
         }
         return BadRequest(result);
+
     }
+
 }

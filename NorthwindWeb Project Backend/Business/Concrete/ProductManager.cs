@@ -73,7 +73,7 @@ public class ProductManager : IProductService
     }
 
     [CacheRemoveAspect("IProductService.Get")]
-    [SecuredOperation("product.add")]
+    //[SecuredOperation("product.add")]
     [LogAspect(typeof(FileLogger))]
     [ValidationAspect(typeof(ProductValidator))]
     public IResult Add(Product product)
@@ -89,16 +89,21 @@ public class ProductManager : IProductService
         _productDal.Add(product);
         return new SuccessResult(Messages.ProductAdded);
     }
-    
     [CacheRemoveAspect("IProductService.Get")]
     [ValidationAspect(typeof(ProductValidator))]
     public IResult Update(Product product)
     {
-        // CheckIfProductCountOfCategoryCorrect(product.CategoryID);
-        // CheckIfProductNameExist(product.ProductName);
+        var oldProduct = _productDal.Get(p => p.ProductID == product.ProductID);
         
+        oldProduct.ProductName = product.ProductName;
+        oldProduct.CategoryID = product.CategoryID;
+        oldProduct.UnitPrice = product.UnitPrice;
+        oldProduct.UnitsInStock = product.UnitsInStock;
+
+        _productDal.Update(oldProduct);
         return new SuccessResult(Messages.ProductUpdated);
     }
+
 
     [TransactionScopeAspect]
     public IResult AddTransactionalTest(Product product)
