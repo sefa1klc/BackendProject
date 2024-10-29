@@ -71,7 +71,7 @@ public class ProductsController : ControllerBase
         var result = _productService.Update(product);
         if (result.Success)
         {
-            return Ok(result);
+            return Ok(result); 
         }
         return BadRequest(result);
 

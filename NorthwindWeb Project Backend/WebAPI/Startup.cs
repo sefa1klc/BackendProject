@@ -68,6 +68,7 @@ namespace WebAPI
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
                 });
             }
+            app.ConfigureCustomExceptionMiddleware();
 
             app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader());
             
