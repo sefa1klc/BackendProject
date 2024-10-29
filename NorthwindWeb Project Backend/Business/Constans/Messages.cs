@@ -22,5 +22,5 @@ public static class Messages
     public static string PasswordError = "Password invalid";
     public static string SuccessfulLogin = "Successful login";
     public static string UserAlreadyExists = "User already exists";
-    public static string AccessTokenCreated = "Access token created";
+    public static string AccessTokenCreated = "Login successfully!";
 }

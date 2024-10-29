@@ -5,12 +5,9 @@ using Business.Constans;
 using Business.RulesMethods;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Caching;
-using Core.Aspects.Autofac.Exception;
-using Core.Aspects.Autofac.Logging;
 using Core.Aspects.Autofac.Performance;
 using Core.Aspects.Autofac.Transaction;
 using Core.Aspects.Autofac.Validation;
-using Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Business;
 using Core.Utilities.Results;
@@ -73,8 +70,8 @@ public class ProductManager : IProductService
     }
 
     [CacheRemoveAspect("IProductService.Get")]
-    //[SecuredOperation("product.add")]
-    [LogAspect(typeof(FileLogger))]
+    [SecuredOperation("product.add")]
+    //[LogAspect(typeof(FileLogger))]
     [ValidationAspect(typeof(ProductValidator))]
     public IResult Add(Product product)
     {
